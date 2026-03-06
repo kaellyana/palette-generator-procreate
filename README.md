@@ -28,7 +28,7 @@ Aucune installation complexe. Il te faut juste **Python** sur ton ordinateur.
 
 1. Télécharge ou clone ce dépôt
 2. Place les fichiers dans un même dossier
-3. Double-clique sur `palette_app.py`
+3. Double-clique sur `palette_app.pyw`
 4. La fenêtre s'ouvre 🎉
 
 > **Note :** Les bibliothèques utilisées (`tkinter`, `json`, `zipfile`, `os`) sont incluses par défaut avec Python. Rien à installer en plus.
@@ -51,7 +51,7 @@ Tu n'as plus qu'à l'importer dans Procreate !
 
 ```
 📁 ton-dossier/
-├── palette_app.py       → l'application principale (interface graphique)
+├── palette_app.pyw       → l'application principale (interface graphique)
 ├── create_palette.py    → la logique de génération des fichiers .swatches
 └── Palettes_finales/    → dossier créé automatiquement à la première génération
 ```
