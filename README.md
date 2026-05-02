@@ -19,6 +19,7 @@ Lance l'appli, colle tes codes, donne un nom à ta palette, clique sur **Génér
 - Aperçu visuel des couleurs en temps réel
 - Génération du fichier `.swatches` en un clic
 - Fichiers enregistrés automatiquement dans un dossier `Palettes_finales/`
+- Icône personnalisée dans la barre des tâches Windows
 
 ---
 
@@ -27,11 +28,11 @@ Lance l'appli, colle tes codes, donne un nom à ta palette, clique sur **Génér
 Aucune installation complexe. Il te faut juste **Python** sur ton ordinateur.
 
 1. Télécharge ou clone ce dépôt
-2. Place les fichiers dans un même dossier
+2. Place tous les fichiers dans un même dossier
 3. Double-clique sur `palette_app.pyw`
 4. La fenêtre s'ouvre 🎉
 
-> **Note :** Les bibliothèques utilisées (`tkinter`, `json`, `zipfile`, `os`) sont incluses par défaut avec Python. Rien à installer en plus.
+> **Note :** Les bibliothèques utilisées (`tkinter`, `json`, `zipfile`, `os`, `re`, `ctypes`) sont incluses par défaut avec Python. Rien à installer en plus.
 
 ---
 
@@ -51,9 +52,10 @@ Tu n'as plus qu'à l'importer dans Procreate !
 
 ```
 📁 ton-dossier/
-├── palette_app.pyw       → l'application principale (interface graphique)
-├── create_palette.py    → la logique de génération des fichiers .swatches
-└── Palettes_finales/    → dossier créé automatiquement à la première génération
+├── palette_app.py      → le code source complet (logique + interface)
+├── palette_app.pyw     → le lanceur sans fenêtre noire (double-clic)
+├── favicon.ico         → icône de l'application
+└── Palettes_finales/   → dossier créé automatiquement à la première génération
 ```
 
 ---
@@ -62,7 +64,7 @@ Tu n'as plus qu'à l'importer dans Procreate !
 
 Ce projet est basé sur le travail original de [M4nw3l](https://github.com/M4nw3l/PyProcreatePalette), distribué sous licence MIT.
 
-L'adaptation Windows et l'interface graphique ont été développées par [Kaellyana](https://github.com/kaellyana).
+L'adaptation Windows et l'interface graphique ont été développées par [Kaellyana](https://github.com/kaellyana), avec l'aide de [Claude](https://claude.ai) (Anthropic).
 
 ---
 
