@@ -2,6 +2,8 @@
 
 Un petit outil Python avec interface graphique pour générer des palettes de couleurs au format `.swatches`, directement importables dans **Procreate**.
 
+![Aperçu de l'interface](assets/palette_generator_preview.png)
+
 ---
 
 ## À quoi ça sert ?
@@ -55,6 +57,7 @@ Tu n'as plus qu'à l'importer dans Procreate !
 ├── palette_app.py      → le code source complet (logique + interface)
 ├── palette_app.pyw     → le lanceur sans fenêtre noire (double-clic)
 ├── favicon.ico         → icône de l'application
+├── assets/             → images du projet (screenshots)
 └── Palettes_finales/   → dossier créé automatiquement à la première génération
 ```
 
