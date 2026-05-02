@@ -2,6 +2,8 @@
 
 A lightweight Python desktop app to generate `.swatches` color palette files, ready to import directly into **Procreate**.
 
+![Interface preview](assets/palette_generator_preview.png)
+
 ---
 
 ## What does it do?
