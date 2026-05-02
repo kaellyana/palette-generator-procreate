@@ -1,0 +1,12 @@
+# Environnement Python local (lié à chaque machine, ne jamais publier)
+.venv/
+
+# Dossier de sortie généré à l'usage (contient les palettes créées par l'utilisateur)
+Palettes_finales/
+
+# Lanceur Windows personnel (chemin spécifique à chaque machine)
+Lancer_Palette.vbs
+
+# Fichiers système Windows
+Thumbs.db
+desktop.ini
