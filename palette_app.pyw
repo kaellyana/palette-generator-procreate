@@ -4,6 +4,7 @@ import json
 import zipfile
 import os
 import re
+import ctypes  # nécessaire pour forcer l'icône dans la barre des tâches Windows
 
 # ============================================================
 #  ÉTAPE 1 — Convertir les codes couleurs en fichier Procreate
@@ -78,6 +79,20 @@ class PaletteApp:
         self.root.title("✦ Palette Procreate Generator")
         self.root.configure(bg=BG_DARK)
         self.root.resizable(False, False)
+
+        # --- Icône dans la barre de titre ET la barre des tâches Windows ---
+        # ctypes dit à Windows que cette app a son propre identifiant,
+        # ce qui force Windows à utiliser l'icône qu'on lui donne
+        try:
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
+                "procreate.palette_generator"
+            )
+        except Exception:
+            pass  # si on n'est pas sur Windows, on ignore silencieusement
+
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "favicon.ico")
+        if os.path.exists(icon_path):
+            self.root.iconbitmap(icon_path)
 
         # Centrer la fenêtre sur l'écran
         self.root.geometry("520x680")
